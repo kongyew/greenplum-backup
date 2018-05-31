@@ -41,6 +41,7 @@ script:
   - ls -lah
   - docker-compose -f ./usecase1/docker-compose.yml up &
   - docker ps
+  - docker exec -it gpdbsne sh  -c "startGPDB.sh" && "su - gpadmin;export PGPASSWORD=\"pivotal\";gpbackup --dbname postgres --debug -backup-dir /tmp "
   - docker-compose -f ./usecase1/docker-compose.yml down
   - cd ${TRAVIS_BUILD_DIR}
   - ls -al
