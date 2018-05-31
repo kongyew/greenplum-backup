@@ -11,7 +11,6 @@ docker run -it --entrypoint=/bin/sh minio/mc
 docker run minio/mc ls play
 
 
-
 docker run  -it --hostname=minioclient \
     --privileged \
     --publish 5432:5432 \
