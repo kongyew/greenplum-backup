@@ -5,10 +5,6 @@ date:   2018-04-20 14:54:07 -0700
 categories: greenplum backup restore gpbackup gprestore
 ---
 
-# Greenplum
-Greenplum Database® is an advanced, fully featured, open source data platform.  It provides powerful and rapid analytics on petabyte scale data volumes.  Uniquely geared toward big data analytics, Greenplum Database is powered by the world’s most advanced cost-based query optimizer delivering high analytical query performance on large data volumes.
-<https://greenplum.org>
-
 # Learn how to use gpbackup and gprestore
 This [repository](https://github.com/kongyew/greenplum-backup) demonstrates how to use gpbackup and gprestore for Greenplum
 
