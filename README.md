@@ -18,7 +18,7 @@ gpbackup utilizes ACCESS SHARE locks at the individual table level, instead of E
 
  Therefore, you can quickly run parallel backup to ensure your data is safely protected.
 
-For more details,[see this readme](#usecase1/README.MD)
+For more details,[see this readme](usecase1/README.MD)
 
 ** GPBackup **
 ![alt text](usecase1/images/gpbackup.png "Running gpbackup")
