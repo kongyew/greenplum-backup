@@ -43,6 +43,7 @@ script:
   - docker ps
   - docker exec -it $(docker ps -a | grep gpdb5 | awk '{print $1}') sh  -c "startGPDB.sh"
   - docker exec -it $(docker ps -a | grep gpdb5 | awk '{print $1}') sh  -c "runuser -l  gpadmin -c 'export PGPASSWORD=\"pivotal\";gpbackup --dbname postgres --debug -backup-dir /tmp '"
+  - ls -al /tmp/gpseg0
   - docker-compose -f ./usecase1/docker-compose.yml down
   - cd ${TRAVIS_BUILD_DIR}
   - ls -al

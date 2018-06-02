@@ -35,3 +35,4 @@ For more details,[please see this readme](usecase1/README.MD)
 The Greenplum Database (GPDB) is an advanced, fully featured, open source data warehouse. It provides powerful and rapid analytics on petabyte scale data volumes. Uniquely geared toward big data analytics, Greenplum Database is powered by the world’s most advanced cost-based query optimizer delivering high analytical query performance on large data volumes.
 [Greenplum](https://greenplum.org)
 [Pivotal Greenplum](https://pivotal.io/pivotal-greenplum)
+[Blog about Greenplum - gpbackup and gprestore](https://kongyew.github.io/greenplum-backup/)
