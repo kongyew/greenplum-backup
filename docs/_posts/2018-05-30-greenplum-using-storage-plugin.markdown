@@ -1,5 +1,12 @@
-# Getting started to use gpbackup and gprestore
-This [repository](https://github.com/kongyew/greenplum-backup) demonstrates how to use gpbackup and gprestore for Greenplum. You can complete this example in 30 minutes.
+---
+layout: post
+title:  "Using Greenplum storage plugin !"
+date:   2018-04-20 14:54:07 -0700
+categories: greenplum backup restore gpbackup gprestore
+---
+
+# Learn how to use gpbackup and gprestore
+This [repository](https://github.com/kongyew/greenplum-backup) demonstrates how to use gpbackup and gprestore for Greenplum
 
 # Table of Contents
 1. [Pre-requisites](#Pre-requisites)
@@ -153,5 +160,3 @@ drwxrwxr-x 3 gpadmin gpadmin 4096 May 31 18:00 backups
 * [gpbackup](https://gpdb.docs.pivotal.io/580/utility_guide/admin_utilities/gpbackup.html)
 * [Greenplum product](https://pivotal.io/pivotal-greenplum)
 * [Greenplum documentations](https://https://gpdb.docs.pivotal.io/)
-* [Greenplum documentations](https://https://gpdb.docs.pivotal.io/)
-https://github.com/greenplum-db/gpbackup-s3-plugin

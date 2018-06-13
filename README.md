@@ -4,8 +4,28 @@ Greenplum.
 
 [![Build Status](https://travis-ci.org/kongyew/greenplum-gphdfs-examples.svg?branch=master)](https://travis-ci.org/kongyew/greenplum-gphdfs-examples)
 
-# Use Case
-1. [Learn how to use gpbackup and gprestore](#usecase1/README.MD)
+# Introduction
+Back up your entire cluster periodically to minimize data inconsistency when a restore is required.
+
+# Types of backup:
+The following backup types are available for Greenplum database.
+
+* Full
+* Incremental
+
+# Use Case:
+1. [Learn how to perform full backup and restore to  file system](#usecase1/README.MD)
+2. [Learn how to perform full backup and restore to  S3](#usecase1/README.MD)
+2. [Learn how to perform incremental backup](#usecase2/README.MD)
+3. [Learn how to use GPDB plugin storage](#usecase3/README.MD)
+4. [How to  copy your database to another cluster](#usecase4/README.MD)
+5. [How to back n    mnik  to another cluster](#usecase4/README.MD)
+
+
+# How to use:
+1. [Learn how to use gpbackup and gprestore]
+2. [Learn how to use gpcrondump]
+
 
 
 ## Use gpbackup and gprestore
