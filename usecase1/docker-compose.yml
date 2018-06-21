@@ -1,5 +1,6 @@
 version: '3'
 services:
+<<<<<<< HEAD
   gpdb5:
         image: "kochanpivotal/gpdb5"
         command: bin/bash
@@ -7,25 +8,58 @@ services:
         container_name: gpdbsne
         environment:
             - START_GPDB=yes
+=======
+    gpdb5a:
+        image: kochanpivotal/gpdb5:latest
+        command: >
+            bash -c "setupGPDB.sh
+            && bin/bash"
+        hostname: gpdb5a
+        container_name: gpdb5a
+        environment:
+            - START_GPDB=no
+>>>>>>> 366de63d020d934525fef928b5cca4f5873c2763
         ports:
-         - "5432:5432"
-         - "5005:5005"
-         - "5010:5010"
-         - "9022:22"
-         - "40000:40000"
-         - "40001:40001"
-         - "40002:40002"
+            - '5432:5432'
+            - '5005:5005'
+            - '5010:5010'
+            - '9022:22'
+            - '40000:40000'
+            - '40001:40001'
+            - '40002:40002'
         expose:
-         - "5432"
+            - '5432'
         volumes:
-         - ..:/code
+            - '..:/code'
         privileged: true
         tty: true
         networks:
-          mynetwork:
-            aliases:
-              - gpdbsne
-              - gpdbsne.localdomain.com
+            mynetwork: {aliases: [gpdb5a, gpdb5a.localdomain.com]}
+    gpdb5b:
+        image: kochanpivotal/gpdb5:latest
+        command: >
+            bash -c "setupGPDB.sh
+            && bin/bash"
+        hostname: gpdb5b
+        container_name: gpdb5b
+        environment:
+            - START_GPDB=no
+        ports:
+            - '6432:5432'
+            - '6005:5005'
+            - '6010:5010'
+            - '19022:22'
+            - '50000:40000'
+            - '50001:40001'
+            - '50002:40002'
+        expose:
+            - '5432'
+        volumes:
+            - '..:/code'
+        privileged: true
+        tty: true
+        networks:
+            mynetwork: {aliases: [gpdb5b, gpdb5b.localdomain.com]}
 networks:
     mynetwork:
-      driver: bridge
+        driver: bridge
